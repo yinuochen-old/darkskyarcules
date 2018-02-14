@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<form action="/weather" method="post">
+    <fieldset>
+        <ul>
+            <li>
+                <label for="latitude">Latitude</label>
+                <input type="text" name="latitude" placeholder="e.g. 42.9150747" required>
+            </li>
+
+            <li>
+                <label for="longitude">Longitude</label>
+                <input type="text" name="longitude" placeholder="e.g. -77.784323" required>
+            </li>
+        </ul>
+    </fieldset>
+
+    <button id='getWeather'>Get Weather</button>
+</form>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>

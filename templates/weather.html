@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+<ul>
+
+  {% for x in range(days|length) %}
+    <li>Date: {{ days[x] }}</li>
+    <ul>
+      <li>Temperature High: {{ tempHigh[x] }}</li>
+      <li>Temperature Low: {{ tempLow[x] }}</li>
+    </ul>
+
+  {% endfor %}
+
+</ul>
